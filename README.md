@@ -15,7 +15,6 @@ Descriptive Statistics
 Correlation Analysis
 Probability Analysis
 Power BI Dashboard Development
-
 Part 2 – Python Analytics Pipeline
 Data Pipeline Construction
 Data Cleaning and Validation
@@ -23,7 +22,6 @@ Feature Engineering
 Data Visualisation
 Command-Line Analytics Application
 Logging and Reproducibility
-
 Part 3 – Machine Learning and AI
 Supervised Learning
 Unsupervised Learning
@@ -45,7 +43,6 @@ Cloud Coverage
 Weather Conditions
 Holiday Information
 Date and Time
-
 Current Progress
 ✅ Task 1.1 – Load Dataset into SQLite
 Completed:
@@ -78,6 +75,23 @@ Compared:
 2017
 Investigated relationships between weather conditions and traffic activity.
 
+Repository Structure
+smart-city-traffic-capstone/
+│
+├── data/
+│   └── raw/
+│       └── Metro_Interstate_Traffic_Volume.csv
+│
+├── part1_data_analytics/
+│   ├── sql/
+│   │   └── traffic_analysis.sql
+│   │
+│   └── reports/
+│       └── task1_sql_analysis.md
+│
+├── README.md
+└── .gitignore
+
 
 Technologies Used
 Python
@@ -92,8 +106,6 @@ Scikit-Learn
 TensorFlow / Keras
 Git
 GitHub
-
-
 Future Work
 
 Upcoming tasks include:
@@ -109,9 +121,8 @@ Deep Learning Models
 Explainable AI
 Recommendation System
 MLOps and Deployment Simulation
-
 Author
 
-Bathrinath Aravamudhan
+Anuprian Paramavadhan
 
 AI, ML and Data Science Capstone Project
