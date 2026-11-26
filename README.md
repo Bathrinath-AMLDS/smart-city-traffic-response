@@ -1,9 +1,11 @@
 Smart City Traffic Intelligence: From Data Analytics to AI-Powered Mobility
 AI, ML and Data Science Capstone Project
+
 Student Information
 Name: Bathrinath Aravamudhan
 Programme: AI, ML and Data Science
 Institution: NUS School of Computing (Emeritus)
+
 Project Overview
 This capstone project focuses on building an end-to-end Smart City Traffic Intelligence solution using the Metro Interstate Traffic Volume dataset.
 
@@ -30,11 +32,11 @@ Explainable AI (SHAP/LIME)
 Recommendation System
 MLOps and Deployment Simulation
 Responsible AI Assessment
+
 Dataset
 Dataset: Metro Interstate Traffic Volume
 
 Description: Hourly westbound I-94 traffic observations near Minneapolis–Saint Paul, including:
-
 Traffic Volume
 Temperature
 Rainfall
@@ -54,6 +56,8 @@ Task 2.2 Correlation Analysis ✅
 Task 3.1 Basic Probability Analysis ✅ 
 Task 3.2 Conditional Probability Analysis ✅ 
 Task 4 Power BI Dashboard
+Task 4.1 Data Quality and Preparation ✅ 
+Task 4.2 Dashboard Development
 
 Repository Structure
 smart-city-traffic-response/
@@ -70,6 +74,7 @@ smart-city-traffic-response/
 │   │   ├── task2_correlation_analysis.md
 │   │   ├── task3_probability_analysis.md
 │   │   └── task3_conditional_probability_analysis.md
+│   │   └── task4_powerbi_data_preparation.md            
 │   │
 │   └── sql/
 │       ├── traffic_analysis.sql
@@ -77,6 +82,8 @@ smart-city-traffic-response/
 │       ├── correlation_analysis.sql
 │       ├── probability_analysis.sql
 │       └── conditional_probability_analysis.sql
+│   ├── powerbi/
+│       ├── Traffic_Intelligence_Dashboard.pbix
 │
 ├── README.md
 ├── .gitignore
@@ -100,9 +107,6 @@ Future Work
 
 Upcoming tasks include:
 
-Descriptive Statistics
-Correlation Analysis
-Probability Analysis
 Power BI Dashboard
 Python Pipeline Development
 Feature Engineering
