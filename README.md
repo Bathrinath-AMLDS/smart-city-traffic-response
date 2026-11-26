@@ -67,17 +67,20 @@ smart-city-traffic-response/
 │   ├── reports/
 │   │   ├── task1_sql_analysis.md
 │   │   ├── task2_descriptive_statistics.md
-│   │   └── task2_correlation_analysis.md
+│   │   ├── task2_correlation_analysis.md
+│   │   ├── task3_probability_analysis.md
+│   │   └── task3_conditional_probability_analysis.md
 │   │
 │   └── sql/
 │       ├── traffic_analysis.sql
 │       ├── descriptive_statistics.sql
-│       └── correlation_analysis.sql
+│       ├── correlation_analysis.sql
+│       ├── probability_analysis.sql
+│       └── conditional_probability_analysis.sql
 │
 ├── README.md
 ├── .gitignore
 └── .gitattributes
-
 
 
 Technologies Used
