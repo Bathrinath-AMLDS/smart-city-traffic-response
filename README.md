@@ -43,54 +43,40 @@ Cloud Coverage
 Weather Conditions
 Holiday Information
 Date and Time
-Current Progress
-✅ Task 1.1 – Load Dataset into SQLite
-Completed:
 
-Imported traffic dataset into SQLite.
-Verified successful data loading.
-✅ Task 1.2 – Annual Traffic Trend Analysis
-Analysed total yearly traffic volume for:
-
-2012
-2013
-2014
-2015
-2016
-2017
-Identified:
-
-Year-over-year increases
-Year-over-year decreases
-Long-term traffic trends
-✅ Task 1.3 – Holiday Temperature Analysis
-Analysed temperature patterns for:
-
-New Year's Day
-Labor Day
-Compared:
-
-2015
-2016
-2017
-Investigated relationships between weather conditions and traffic activity.
+Project Progress
+Part 1 – Data Analytics
+Task 1.1 Load Dataset into SQLite  ✅ 
+Task 1.2 Annual Traffic Trends     ✅ 
+Task 1.3 Holiday Temperature Analysis
+Task 2.1 Descriptive Statistics
+Task 2.2 Correlation Analysis
+Task 3.1 Basic Probability Analysis
+Task 3.2 Conditional Probability Analysis
+Task 4 Power BI Dashboard
 
 Repository Structure
-smart-city-traffic-capstone/
+smart-city-traffic-response/
 │
 ├── data/
 │   └── raw/
 │       └── Metro_Interstate_Traffic_Volume.csv
 │
 ├── part1_data_analytics/
-│   ├── sql/
-│   │   └── traffic_analysis.sql
 │   │
-│   └── reports/
-│       └── task1_sql_analysis.md
+│   ├── reports/
+│   │   ├── task1_sql_analysis.md
+│   │   ├── task2_descriptive_statistics.md
+│   │   └── task2_correlation_analysis.md
+│   │
+│   └── sql/
+│       ├── traffic_analysis.sql
+│       ├── descriptive_statistics.sql
+│       └── correlation_analysis.sql
 │
 ├── README.md
-└── .gitignore
+├── .gitignore
+└── .gitattributes
 
 
 
@@ -122,6 +108,8 @@ Deep Learning Models
 Explainable AI
 Recommendation System
 MLOps and Deployment Simulation
+
+
 Author
 
 Bathrinath Aravamudhan
