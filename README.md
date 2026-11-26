@@ -46,13 +46,13 @@ Date and Time
 
 Project Progress
 Part 1 – Data Analytics
-Task 1.1 Load Dataset into SQLite  ✅ 
-Task 1.2 Annual Traffic Trends     ✅ 
-Task 1.3 Holiday Temperature Analysis
-Task 2.1 Descriptive Statistics
-Task 2.2 Correlation Analysis
-Task 3.1 Basic Probability Analysis
-Task 3.2 Conditional Probability Analysis
+Task 1.1 Load Dataset into SQLite ✅ 
+Task 1.2 Annual Traffic Trends ✅ 
+Task 1.3 Holiday Temperature Analysis ✅ 
+Task 2.1 Descriptive Statistics ✅ 
+Task 2.2 Correlation Analysis ✅ 
+Task 3.1 Basic Probability Analysis ✅ 
+Task 3.2 Conditional Probability Analysis ✅ 
 Task 4 Power BI Dashboard
 
 Repository Structure
