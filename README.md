@@ -123,6 +123,5 @@ Recommendation System
 MLOps and Deployment Simulation
 Author
 
-Anuprian Paramavadhan
-
+Bathrinath Aravamudhan
 AI, ML and Data Science Capstone Project
