@@ -55,9 +55,9 @@ Task 2.1 Descriptive Statistics ✅
 Task 2.2 Correlation Analysis ✅ 
 Task 3.1 Basic Probability Analysis ✅ 
 Task 3.2 Conditional Probability Analysis ✅ 
-Task 4 Power BI Dashboard
+Task 4 Power BI Dashboard✅ 
 Task 4.1 Data Quality and Preparation ✅ 
-Task 4.2 Dashboard Development
+Task 4.2 Dashboard Analysis✅ 
 
 Repository Structure
 smart-city-traffic-response/
@@ -66,24 +66,32 @@ smart-city-traffic-response/
 │   └── raw/
 │       └── Metro_Interstate_Traffic_Volume.csv
 │
-├── part1_data_analytics/
+part1_data_analytics/
+│
+├── powerbi/
+│   ├── Screenshots/
+│   │   ├── 07_daily_traffic_trends.png
+│   │   ├── 08_hourly_traffic_patterns.png
+│   │   ├── 09_weather_impact.png
+│   │   └── 10_temperature_vs_traffic.png
 │   │
-│   ├── reports/
-│   │   ├── task1_sql_analysis.md
-│   │   ├── task2_descriptive_statistics.md
-│   │   ├── task2_correlation_analysis.md
-│   │   ├── task3_probability_analysis.md
-│   │   └── task3_conditional_probability_analysis.md
-│   │   └── task4_powerbi_data_preparation.md            
-│   │
-│   └── sql/
-│       ├── traffic_analysis.sql
-│       ├── descriptive_statistics.sql
-│       ├── correlation_analysis.sql
-│       ├── probability_analysis.sql
-│       └── conditional_probability_analysis.sql
-│   ├── powerbi/
-│       ├── Traffic_Intelligence_Dashboard.pbix
+│   └── Traffic_Intelligence_Dashboard.pbix
+│
+├── reports/
+│   ├── task1_sql_analysis.md
+│   ├── task2_descriptive_statistics.md
+│   ├── task2_correlation_analysis.md
+│   ├── task3_probability_analysis.md
+│   ├── task3_conditional_probability_analysis.md
+│   ├── task4_powerbi_data_preparation.md
+│   └── task4_powerbi_dashboard.md
+│
+└── sql/
+│   ├── traffic_analysis.sql
+│   ├── descriptive_statistics.sql
+│   ├── correlation_analysis.sql
+│   ├── probability_analysis.sql
+│   ├── conditional_probability_analysis.sql
 │
 ├── README.md
 ├── .gitignore
