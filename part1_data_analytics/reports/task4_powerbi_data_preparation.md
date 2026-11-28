@@ -1,37 +1,57 @@
 # Task 4.1 – Data Quality and Preparation
 
-## Dataset Overview
+## Objective
 
-The Metro Interstate Traffic Volume dataset was imported into Power BI Desktop and processed using Power Query Editor.
+The Metro Interstate Traffic Volume dataset was imported into Power BI Desktop and prepared using Power Query Editor. Data quality checks and feature engineering steps were performed to ensure the dataset was suitable for dashboard development and traffic analysis.
+
+---
+
+## Dataset Overview
 
 The dataset contains:
 
-- **48,204 rows**
-- **9 columns**
+- Rows: 48,204
+- Columns: 9
 
-The dataset includes traffic, weather, holiday, and date-time information that can be used to analyse traffic patterns and congestion levels.
+Original columns:
+
+- holiday
+- temp
+- rain_1h
+- snow_1h
+- clouds_all
+- weather_main
+- weather_description
+- date_time
+- traffic_volume
 
 ---
 
 ## Missing Value Analysis
 
-Data quality was assessed using the Power Query Column Quality and Column Distribution features.
+Data quality was assessed using the Column Quality and Column Distribution features in Power Query Editor.
 
-The analysis showed:
+Results:
 
-- 100% valid values across all columns.
-- 0% error values.
-- 0% empty values.
+| Metric | Result |
+|----------|----------|
+| Valid Values | 100% |
+| Error Values | 0% |
+| Empty Values | 0% |
 
-Although the **holiday** column contains the value **"None"** for many records, this represents valid non-holiday observations rather than missing data.
+All columns were found to contain valid data.
 
-Therefore, no missing value treatment or imputation was required before analysis.
+Although the holiday column includes many records with the value "None", these represent non-holiday observations rather than missing values.
+
+### Interpretation
+
+The analysis confirmed that the dataset contains no missing or empty values. No data imputation or cleaning procedures were required before analysis.
 
 ---
 
 ## Data Type Validation
 
-The data types assigned by Power Query were reviewed using the Advanced Editor and the Changed Type transformation step.
+Data types were verified using the Advanced Editor and the Changed Type transformation step.
 
 | Column | Data Type |
 |----------|----------|
@@ -42,51 +62,65 @@ The data types assigned by Power Query were reviewed using the Advanced Editor a
 | clouds_all | Whole Number |
 | weather_main | Text |
 | weather_description | Text |
-| date_time | Date/Time |
+| date_time | DateTime |
 | traffic_volume | Whole Number |
 
-All columns were assigned appropriate data types. Numerical variables were stored as numeric fields, categorical variables were stored as text, and the date_time field was correctly recognised as a DateTime value suitable for time-based analysis.
+### Interpretation
 
-No data type corrections were required.
+All columns were assigned appropriate data types. Numerical attributes were stored as numeric fields, categorical variables were stored as text fields, and date_time was correctly identified as a DateTime field. No data type corrections were necessary.
 
 ---
 
 ## Hour Extraction
 
-A new column named **Hour** was extracted from the **date_time** field using Power Query.
+A new column named Hour was extracted from the date_time field.
 
-This transformation generated hourly values ranging from 0 to 23 and enables detailed analysis of traffic behaviour throughout the day.
+Transformation:
 
-The Hour column supports the identification of peak traffic periods and hourly congestion trends.
+```text
+Add Column → Time → Hour → Hour
+```
+
+The resulting column contains values ranging from 0 to 23.
+
+### Interpretation
+
+The Hour field enables the analysis of hourly traffic behaviour and supports the identification of peak and off-peak traffic periods.
 
 ---
 
 ## Temperature Conversion
 
-The temperature values in the dataset were originally stored in Kelvin.
+Temperature values were originally stored in Kelvin.
 
-To improve interpretability, a new column named **Temperature_Celsius** was created using the following formula:
+A new field named Temperature_Celsius was created using:
 
-**Temperature_Celsius = temp − 273.15**
+```text
+Temperature_Celsius = temp − 273.15
+```
 
-Converting temperatures to Celsius provides a more familiar scale for weather analysis and supports dashboard visualisations involving temperature trends.
+### Interpretation
+
+Converting temperature values into degrees Celsius improves readability and makes weather-related analysis easier to interpret.
 
 ---
 
 ## Traffic Category Creation
 
-A new field named **Traffic_Category** was created using a Conditional Column in Power Query.
+A new field named Traffic_Category was created using the following rules:
 
-The following classification rules were applied:
+| Traffic Volume | Category |
+|---------------|----------|
+| Less than 4500 | Low |
+| 4500 to 5500 | Medium |
+| Greater than 5500 | High |
 
-- **Low:** traffic_volume < 4500
-- **Medium:** traffic_volume between 4500 and 5500
-- **High:** traffic_volume > 5500
+### Interpretation
 
-This categorisation simplifies traffic analysis by grouping observations into meaningful congestion levels. It also supports filtering, reporting, and dashboard visualisations.
+Traffic_Category simplifies traffic analysis by grouping observations into meaningful traffic levels. This feature supports dashboard filtering and visualisation of congestion patterns.
 
 ---
 
-## Interpretation
+## Conclusion
 
-The data quality assessment confirmed that the dataset is complete and suitable for analysis, with no missing values or data type issues requiring correction. Additional features such as Hour, Temperature_Celsius, and Traffic_Category were successfully created to enhance analytical capabilities. These transformations improve the ability to identify temporal traffic patterns, evaluate weather impacts, and classify congestion levels, providing a strong foundation for the development of the Traffic Intelligence Dashboard.
+The data quality assessment confirmed that the dataset is complete and suitable for analysis. No missing values or data type issues were identified. Additional columns including Hour, Temperature_Celsius and Traffic_Category were successfully created to support further traffic intelligence analysis and dashboard development.
